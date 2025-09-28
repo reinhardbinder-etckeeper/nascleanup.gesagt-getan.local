@@ -1,0 +1,11 @@
+#
+# /etc/.gitignore
+#
+
+# during repository initialization we ignore everything expect README.md and
+# .gitignore itself
+
+*
+!README.md
+!.gitignore
+
