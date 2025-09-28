@@ -2,10 +2,22 @@
 # /etc/.gitignore
 #
 
-# during repository initialization we ignore everything expect README.md and
-# .gitignore itself
+# track configuration changes done before etckeeper activation
 
+
+# ignore everything ...
 *
+
+# ... but track README.md and .gitignore
 !README.md
 !.gitignore
 
+
+# track systemd/network:
+#   - don't ignore systemd folder, we need some content
+#   - ignore (allmost) everything inside the systemd folder, ...
+#   - but don't ignore systemd/network and its content
+!systemd/
+systemd/*
+!systemd/network/
+!systemd/network/*

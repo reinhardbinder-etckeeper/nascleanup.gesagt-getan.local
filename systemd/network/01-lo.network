@@ -1,0 +1,13 @@
+#
+# /etc/systemd/network/01-lo.network
+#
+# Configure loopback interface via systemd-networkd
+#
+
+[Match]
+Name=lo
+
+[Network]
+Address=127.0.0.1/8
+
+LinkLocalAddressing=ipv6
