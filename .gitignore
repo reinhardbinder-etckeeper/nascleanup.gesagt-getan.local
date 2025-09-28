@@ -21,3 +21,9 @@
 !etckeeper/*/
 !etckeeper/*/*
 !etckeeper/*/*/
+
+# track network configuration (systemd-networkd)
+!systemd/
+systemd/*
+!systemd/network/
+!systemd/network/*
