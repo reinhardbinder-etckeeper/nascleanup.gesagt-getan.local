@@ -2,10 +2,22 @@
 # /etc/.gitignore
 #
 
-# during repository initialization we ignore everything expect README.md and
-# .gitignore itself
+# track configuration changes based on etckeeper installation
 
+
+# ignore almost everything, but ...
 *
+
+# track git specific stuff 
 !README.md
 !.gitignore
 
+# track etckeepers permission file
+!.etckeeper
+
+# track etckeepers configuration directory /etc/etckeeper
+!etckeeper/
+!etckeeper/*
+!etckeeper/*/
+!etckeeper/*/*
+!etckeeper/*/*/
