@@ -1,0 +1,17 @@
+#
+# /etc/systemd/network/10-eno1.network
+#
+# Configure wired network interface via systemd-networkd
+# with DHCP
+#
+
+[Match]
+Name=eno1
+
+DHCP=no
+Address=10.10.10.96/24
+Gateway=10.10.a0.1
+DNS=10.10.10.51
+DNS=10.10.10.54
+
+# ToDo: add IPv6 configuration
